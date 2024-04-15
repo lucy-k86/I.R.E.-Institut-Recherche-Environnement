@@ -1,0 +1,430 @@
+/*reset.css, d’Eric Meyer*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*styles image background body*/
+
+body{
+    background-image: url(images/bkgd_page.jpg);
+    background-repeat: no-repeat;
+    background-color: #f6f6f6;
+    background-size: contain;
+}
+
+/*styles header / logo / menu / slogan*/
+
+header{
+    width: 1024px;
+    min-height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.logo{
+    width: 159px;
+    height: 67px;
+}
+
+/**********menu**********/
+
+nav{
+    float: right;
+    padding-top: 20px;
+}
+
+ul{
+    display: flex;
+    text-decoration: none;
+    float: right;
+    border: dotted #fff;
+}
+
+li{
+    padding: 10px; 
+}
+
+li:hover{
+    background-color: #fff;
+}
+
+/*******Ligne de separation entre les liens du menu*****/
+
+.menu li{
+    border-right: dotted #fff;
+}
+
+.menu li:last-child {
+	border-right: none;
+}
+
+/*liens menu*/
+
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+a:hover{
+    color: rgb(37, 35, 35);
+}
+
+/**************fin menu*********/
+
+/*Solgan*/
+
+hgroup{
+    color: #f6f6f6;
+    margin: auto; 
+    text-align: center;
+    padding: 70px;
+    margin: 70px;
+}
+
+/*typographie et centrage du texte du slogan*/
+
+hgroup h1{
+    font-size: 60px;
+    font-weight: bolder;
+}
+hgroup .subtitle{
+    font-size: 40px;
+    padding: 10px;
+}
+
+hgroup p{
+    font-size: larger;
+    padding: 10px;
+}
+
+/*Styles du conteneur principal*/
+
+.wrapper{
+    width: 80%;
+    max-width: 1920px;
+    min-width: 1152px;
+    background-color: #f6f6f6;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Contenu container*/
+
+.container{
+    column-count: 3; 
+}
+
+img .col-main{
+    width: 370px;
+    height: 270px;
+}
+article .livre-product{
+    width: 184px;
+    height: 187px;
+}
+
+/*roll-over des images gauche du premier article*/
+
+.roll-over-contenu-img:hover {
+    opacity: 0.4;
+    background-color: #ccc;
+  }
+
+/*contenu "col-main" / les 3 colonne du articole / img/ article/ photos de livre et liens telecharger*/
+
+article .col-main{
+    padding: 30px 30px;
+    color: rgb(32, 32, 32);
+}
+
+/*typographie et centrage du texte du premier article*/
+
+.col-main h2{
+    font-size: xx-large;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.col-main p{
+    font-size: large;
+    margin: 10px;
+}
+
+.meta{
+	font-size: 0.9em;
+    margin: 10px;
+}
+
+.meta-auteur {
+	font-weight:bold;
+    color: #38b4b4;
+}
+
+.meta-date{
+	font-style: italic;
+    color: #aaa;
+}
+
+/*Boutton de telechargement*/
+
+.telechager{
+    color: #a22755;
+    margin-left: 40px;
+}
+
+.telechager:hover{
+    color: #ccc;
+}
+
+/* Styles Article second*/
+
+.container-2{
+    column-count: 2;
+    margin: 100px 90px 50px 50px;
+}
+
+.container{
+    position: relative;
+}
+
+img .container{
+    width: 480px;
+    height: 480px;
+}
+
+/*style du div middle / roll-over du photos "saut"*/
+
+.middle{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .middle {
+    opacity: 2;
+}
+
+.text a{
+    color: #fff;
+}
+
+/*roll over pour le contenu du middle*/
+
+.container:hover .title{
+    font-size: 40px;
+    color: #fff;    
+}
+
+.container:hover .subtitle{
+    width: 300px;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+  
+.container:hover  .text{
+    background-color: #0c7f06;;
+    color: #ccc;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.text a:hover{
+    color: #ccc;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* styles des bloc vignettes / livres*/
+
+.container-vignette{
+    width: 511px;
+    height: 480px;
+    background-color: #ddeae4;
+}
+
+.vignette{
+    width: 198px;
+    height: 182px;
+    padding: 25px; 
+    border: 5px solid #305a47;   
+}
+
+.container-vignette h3{
+    font-size: 20px;
+    text-align: center;
+}
+
+/*position du photos livres / les Books 1/2/3/4*/
+
+.livre{
+    width: 120px;
+    height: 157px;
+    padding-left: 10px;
+}
+
+/* reglage de bordure du blocs vignette / livres*/
+
+.livre1{
+    border-bottom: 5px none;
+}
+
+.livre2{
+    border-left: none;
+ }
+
+.livre3{
+    border-top: 5px none;
+    border-left: 5px none;
+}
+
+/***************** flottement ************************/
+
+.fl-l{
+    float: left;
+}
+
+.fl-r{
+    float: right;
+}
+
+.clear {
+	clear:both;
+}
+
+/***************Formulaire****************/
+
+form{
+    width: 1024px;
+    min-height: 530px;
+    background-color: #ddeae4;
+    border: 5px solid #305a47;
+    margin: 100px 45px 150px;
+}
+
+input{
+   display: block;
+   margin: auto;
+}
+
+textarea{
+    display: block;
+    margin: auto;
+    width: 515px;
+    height: 160px;
+}
+
+/*typographie et centrage du texte du formulaire*/
+
+form h2{
+    font-size: 30px;
+    color: rgb(27, 27, 27);
+    margin-left: 250px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.nom{
+    padding: 5px;
+    width: 510px;
+}
+
+.prenom{
+    float: left;
+    display: flex;
+    width: 240px;
+    padding: 5px;
+    margin-left: 250px;
+}
+
+.email{
+    width: 240px;
+    padding: 5px;
+    margin-right: 250px;
+}
+
+/**************Buttone de formulaire***************/
+
+.buttone{
+    padding: 10px 230px;
+    background-color: #305a47;
+    color: #ddeae4;
+    font-size: large;
+}
+
+.buttone:hover{
+    background-color: #109177;
+    color: #fff;
+}
+
+/*******************fin main**************************/
+
+/*************footer**************/
+
+footer{
+    background-color: #305a47;
+    height: 50px;
+    text-align: center;
+}
+
+/***roll-over liens footer*****/
+
+footer a:hover{
+    color: #ccc;
+}
